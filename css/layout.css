@@ -14,6 +14,7 @@ div {
     padding-top: 20px;
     margin-bottom: 12px;
     text-align: center;
+    background-color: lightskyblue;
     
 }
 img{
@@ -24,3 +25,9 @@ img{
 
 select{margin-left: 50%;
 padding: 22px;}
+
+button{
+ background-color: mediumblue;
+ font-size: x-large;
+ color: mintcream;
+}

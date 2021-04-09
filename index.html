@@ -3,28 +3,42 @@
   <head>
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
+
+
+    <script id='template-img' type='text/x-tmpl-mustache'> 
+         <div id="photo-template"> 
+           <h2>{{title}}</h2>  
+           <img src = {{image_url}}></img>
+          <p>{{description}}</p>      
+        </div> 
+    </script>
+
   </head>
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
-      <select id="myimages" >
+      <select id="selectKeyword">
         <option value="default">Filter by Keyword</option>
-        
       </select>
+
+      <select id="sortElemnt">
+        <option> title </option>
+        <option> Horns </option>
+      </select>
+
+      <button id="page1">First Page</button>
+      <button id="page2">Second Page</button>
     </header>
-    <main>
-      <div id="photo-template">
-        <h2></h2>
-        <img src="" alt="">
-        <p></p>
-      </div>
+    <main id='firstMain'>
+ 
     </main>
-    <footer>
     
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/apps.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+    <script src="./js/apps.js"></script>
   </body>
 </html>
